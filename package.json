@@ -1,13 +1,17 @@
 {
   "name": "smart-pc-controll",
   "version": "0.0.0",
+  "main": "main.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --open",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "start:electron": "ng build --base-href ./ && electron .",
+    "build:electron": "ng build --base-href ./ && npm run electron:serve-tsc",
+    "build:electronprod": "npm run build -- -c production"
   },
   "private": true,
   "dependencies": {
@@ -27,10 +31,11 @@
     "@angular-devkit/build-angular": "~0.901.13",
     "@angular/cli": "~9.1.13",
     "@angular/compiler-cli": "~9.1.13",
-    "@types/node": "^12.11.1",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^5.1.2",
+    "electron": "^11.2.3",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~5.0.0",
