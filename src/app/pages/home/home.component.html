@@ -1,5 +1,12 @@
-<p>home works!</p>
-<app-btn-toggle [(ngModel)]="val" [loading]="true"></app-btn-toggle>
-<pre>
-  {{val|json}}
-</pre>
+<div class="row">
+  <div class="col-2" *ngFor="let item of [0,1,2,3,4,5,6,7,8]">
+
+    <nb-card>
+      <nb-card-header>item - {{item}}</nb-card-header>
+      <nb-card-body class="d-flex justify-content-center">
+        <app-btn-toggle [(ngModel)]="val" [loading]="false" [btnSize]="item > 4 ? 'md' : 'sm'"></app-btn-toggle>
+      </nb-card-body>
+    </nb-card>
+
+  </div>
+</div>

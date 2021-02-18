@@ -4,6 +4,7 @@ import {CommonModule} from '@angular/common';
 import {AuthRoutingModule} from './auth-routing.module';
 import {AuthLayoutComponent} from './auth-layout.component';
 import {LoginComponent} from './login/login.component';
+import {NbLayoutModule} from '@nebular/theme';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import {LoginComponent} from './login/login.component';
   imports: [
     CommonModule,
     AuthRoutingModule,
+    NbLayoutModule,
   ]
 })
 export class AuthModule {

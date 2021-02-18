@@ -1,3 +1,9 @@
+::ng-deep {
+  app-btn-toggle {
+    padding: 3px;
+  }
+}
+
 .btn-circle {
   position: relative;
   color: #ffffff!important;
@@ -7,11 +13,9 @@
 .btn-circle.btn-sm {
   width: 50px;
   height: 50px;
-  padding: 7px 10px;
+  padding: 14px 10px;
   border-radius: 25px;
   text-align: center;
-  font-size: 26px;
-  line-height: 26px;
   span {
     font-size: 22px;
   }
@@ -19,11 +23,9 @@
 .btn-circle.btn-md {
   width: 70px;
   height: 70px;
-  padding: 10px 16px;
+  padding: 20px 16px;
   border-radius: 35px;
   text-align: center;
-  font-size: 36px;
-  line-height: 36px;
   span {
     font-size: 32px;
   }
@@ -31,13 +33,11 @@
 .btn-circle.btn-lg {
   width: 100px;
   height: 100px;
-  padding: 10px 16px;
+  padding: 18px 16px;
   border-radius: 60px;
   text-align: center;
-  font-size: 60px;
-  line-height: 60px;
   span {
-    font-size: 54px;
+    font-size: 64px;
   }
 }
 .btn-circle.btn-xl {
@@ -45,11 +45,9 @@
   height: 200px;
   padding: 10px 16px;
   border-radius: 120px;
-  font-size: 68px;
-  line-height: 68px;
   text-align: center;
   span {
-    font-size: 64px;
+    font-size: 130px;
   }
 }
 .btn-circle:active, .btn-circle:focus, .btn-circle:active:focus {

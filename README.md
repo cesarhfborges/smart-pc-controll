@@ -4,6 +4,7 @@
  - [Material icons]('https://www.npmjs.com/package/material-icons').
  - [Bootswatch - Cosmo]('https://bootswatch.com/').
  - [Ewelink API package]('https://github.com/skydiver/ewelink-api').
+ - [Nebular web template]('https://akveo.github.io/nebular/docs/guides/install-nebular#install-nebular').
 
 ## Rodar projeto
 

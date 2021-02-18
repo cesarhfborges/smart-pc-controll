@@ -15,6 +15,7 @@ import {ControlValueAccessor, NG_VALUE_ACCESSOR} from '@angular/forms';
 export class BtnToggleComponent implements OnInit, ControlValueAccessor {
 
   @Input('loading') loading: boolean = false;
+  @Input('btnSize') btnSize: 'sm' | 'md' | 'lg' | 'xl' = 'md';
 
   private opts: {
     value: boolean,

@@ -2,7 +2,11 @@
   (click)="toggle()"
   [disabled]="options.disabled"
   [ngClass]="{'btn-success': !options.value && !loading, 'btn-danger': options.value && !loading, 'btn-warning':loading}"
-  class="btn btn-circle btn-sm"
+  [class.btn-sm]="btnSize == 'sm'"
+  [class.btn-md]="btnSize == 'md'"
+  [class.btn-lg]="btnSize == 'lg'"
+  [class.btn-xl]="btnSize == 'xl'"
+  class="btn btn-circle"
   type="button"
 >
   <ng-template [ngIf]="loading" [ngIfElse]="normal">

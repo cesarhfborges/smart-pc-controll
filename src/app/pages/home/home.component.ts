@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {EwelinkService} from '../../shared/services/ewelink.service';
 
 @Component({
   selector: 'app-home',
@@ -9,9 +10,12 @@ export class HomeComponent implements OnInit {
 
   val = false;
 
-  constructor() { }
+  constructor(
+    private ewelinkService: EwelinkService,
+  ) { }
 
   ngOnInit(): void {
+    console.log(this.ewelinkService.getCredentials());
   }
 
 }
