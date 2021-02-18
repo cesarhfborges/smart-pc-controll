@@ -1,0 +1,17 @@
+.base-container {
+  background: url("../../assets/imgs/background.jpg") center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.75);
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
+}

@@ -1,16 +1,20 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 
-import { AuthRoutingModule } from './auth-routing.module';
-import { AuthLayoutComponent } from './auth-layout.component';
-import { LoginComponent } from './login/login.component';
+import {AuthRoutingModule} from './auth-routing.module';
+import {AuthLayoutComponent} from './auth-layout.component';
+import {LoginComponent} from './login/login.component';
 
 
 @NgModule({
-  declarations: [AuthLayoutComponent, LoginComponent],
+  declarations: [
+    AuthLayoutComponent,
+    LoginComponent,
+  ],
   imports: [
     CommonModule,
-    AuthRoutingModule
+    AuthRoutingModule,
   ]
 })
-export class AuthModule { }
+export class AuthModule {
+}

@@ -1,5 +1,22 @@
 # SmartPcControll
 
+## pacotes usados
+ - [Material icons]('https://www.npmjs.com/package/material-icons').
+ - [Bootswatch - Cosmo]('https://bootswatch.com/').
+ - [Ewelink API package]('https://github.com/skydiver/ewelink-api').
+
+## Rodar projeto
+
+##### Rodar o projeto no navegador
+```
+npm start
+```
+
+##### Rodar o projeto no electron
+```
+npm run start:electron
+```
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.13.
 
 ## Development server

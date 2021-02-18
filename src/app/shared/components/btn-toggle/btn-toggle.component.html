@@ -1,0 +1,14 @@
+<button
+  (click)="toggle()"
+  [disabled]="options.disabled"
+  [ngClass]="{'btn-success': !options.value && !loading, 'btn-danger': options.value && !loading, 'btn-warning':loading}"
+  class="btn btn-circle btn-sm"
+  type="button"
+>
+  <ng-template [ngIf]="loading" [ngIfElse]="normal">
+    <span class="material-icons-outlined">cached</span>
+  </ng-template>
+  <ng-template #normal>
+    <span class="material-icons-outlined">power_settings_new</span>
+  </ng-template>
+</button>
