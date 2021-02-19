@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {EwelinkService} from '../../shared/services/ewelink.service';
 
 @Component({
@@ -11,11 +11,16 @@ export class HomeComponent implements OnInit {
   val = false;
 
   constructor(
-    private ewelinkService: EwelinkService,
-  ) { }
+    // private ewelinkService: EwelinkService,
+  ) {
+  }
 
   ngOnInit(): void {
-    console.log(this.ewelinkService.getCredentials());
+    // this.ewelinkService.getCredentials().then(r => {
+    //   console.log(r);
+    // }).catch(e => {
+    //   console.log(e);
+    // });
   }
 
 }
